@@ -1,0 +1,33 @@
+BUILD
+SRC
+profiles
+runtime
+seeds
+
+*.o
+crash*
+
+*.out
+*.exe
+.vscode
+
+# --- Compiled Executables & Binaries ---
+# General wildcards to catch executables
+*.out
+*.exe
+*.bin
+*.elf
+*.o
+*.so
+*.a
+*.dylib
+*.profdata
+
+libjpeg-turbo-07-2017-fsanitize_fuzzer-original
+libjpeg-turbo-07-2017-fsanitize_fuzzer
+
+# Arch Linux / Development specific
+pkg/
+src/
+*.pkg.tar.zst
+*.log
