@@ -45,7 +45,7 @@ set -x
 $CXX $CXXFLAGS -std=c++11 -I BUILD \
     -c $(dirname $0)/libjpeg_turbo_fuzzer.cc -o fuzzer_wrapper.o
 
-PLUGIN_PATH="${PLUGIN_PATH:-/home/sas/Coding/Fuss/RemoveAsanFromFunc.so}"
+PLUGIN_PATH="${PLUGIN_PATH:RemoveAsanFromFunc.so}"
 
 LIBS="fuzzer_wrapper.o BUILD/.libs/libturbojpeg.a $LIB_FUZZING_ENGINE -lm"
 
