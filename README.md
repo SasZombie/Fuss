@@ -45,9 +45,8 @@ The cutoff factor is not fixed and it should be experimented with for best perfo
 
 | Cutoff Factor | 100% | 90% | 75% | 50% |
 | :--- | :--- | :--- | :--- | :--- | :--- 
-| Instructions pruned | 7589 | 47 | 19 | 6
-| Time | 19.73 s| 56.08 s | 56.82 s | 58.24 s
-
+| Instructions pruned | 7589 | 47 | 19 | 6 |
+| Time | 19.73 s| 56.08 s | 56.82 s | 58.24 s |
 ## Conclusions
 
 Is it worth it? Maybe. It all depends on the type of program you are testing. It needs to be instrumentation heavy and should be compute bound. This project will have little to no impact for projects that are memory bound or allocation bound such as Freetype, whose memory allocations are hijacked by Asan.
