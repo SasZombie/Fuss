@@ -44,7 +44,7 @@ While complettly removing asan instructions gives a version 33 times faster than
 The cutoff factor is not fixed and it should be experimented with for best performance/security:
 
 | Cutoff Factor | 100% | 90% | 75% | 50% |
-| :--- | :--- | :--- | :--- | :--- | :--- 
+| :--- | :--- | :--- | :--- | :--- 
 | Instructions pruned | 7589 | 47 | 19 | 6 |
 | Time | 19.73 s| 56.08 s | 56.82 s | 58.24 s |
 ## Conclusions
