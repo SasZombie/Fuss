@@ -37,7 +37,7 @@ On a linux machine that has an AMD Ryzen 9 5900X (24) @ 5.36 GHz the following r
 | :--- | :--- | :--- | :--- |
 | Time | 597.25 mils | 62.36 s | 19.73 s|
 
-While complettly removing asan instructions gives a version 33 times faster than the optimized one, the latter is also 3 times faster, confirming the thesis. It should also be noted that for a finer grained approach, instead of cutting instructions from the hottest blocks, the cutting is done from the hottest instructions.
+While complettly removing asan instructions gives a version 33 times faster than the optimized one, the latter is also 3 times faster, confirming the thesis. It should also be noted that for a finer grained approach, instead of cutting instructions from the hottest blocks, the cutting is done from the hottest instructions(the coverage was also removed in this test meaning the fuzzer is blind, but the speed-up is dramatic so I will include it).
 
 ---
 

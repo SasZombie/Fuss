@@ -89,8 +89,7 @@ namespace
             {
                 StringRef Name = f.getName();
                 return Name.starts_with("__asan_load") ||
-                       Name.starts_with("__asan_store") ||
-                       Name.starts_with("__sanitizer_cov_");
+                       Name.starts_with("__asan_store");
             }
 
             std::tuple<std::vector<Metric>, double> gatherInfo() const noexcept

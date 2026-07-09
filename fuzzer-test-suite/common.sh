@@ -44,7 +44,7 @@ if [[ $FUZZING_ENGINE == "fsanitize_fuzzer" ]]; then
   else
 
     FSANITIZE_FUZZER_FLAGS="-O2 -w \
-      -fprofile-use=libjpeg-turbo.profdata \
+      -fprofile-use=/home/sas/Coding/Fuss/fuzzer-test-suite/libjpeg-turbo.profdata \
       -Wno-profile-instr-unprofiled \
       -fno-omit-frame-pointer -g3 \
       -fsanitize=address,fuzzer-no-link \
